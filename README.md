@@ -12,13 +12,13 @@ This project is an experiment using the Firecrawl API to map and scrape websites
 
 - Python 3.x
 - Firecrawl API Key
-    -   To obtain an API key, visit https://www.firecrawl.dev and sign up for an account.
+- To obtain an API key, visit https://www.firecrawl.dev and sign up for an account.
+
 ## Installation
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/instructlab/firecrawl-experiment.git
-   
    cd firecrawl-experiment
    ```
 
@@ -42,8 +42,11 @@ This project is an experiment using the Firecrawl API to map and scrape websites
    ```bash
    python scrape_website.py
    ```
+
 2. Enter the base URL of the website you want to scrape.
+
 3. Select a URL from the list of available links.
+
 4. The content will be scraped and saved as `scraped_content.md`.
 
 ## Example
@@ -58,14 +61,28 @@ Available URLs:
 2. https://www.example.com/about
 3. https://www.example.com/contact
 ...
-
 Options:
 - Enter a number to select a URL
 - Type 'more' to see the next 5 links
 - Type 'all' to see all links
 - Type 'exit' to quit
-
 Your choice: 2
 Scraping content from https://www.example.com/about...
 Markdown content saved to scraped_content.md
 ```
+
+## Local Firecrawl Option
+
+Instead of using the Firecrawl API, you can also run Firecrawl locally. To do this:
+
+1. Clone the Firecrawl repository:
+   ```bash
+   git clone https://github.com/mendableai/firecrawl.git
+   ```
+
+2. Follow the instructions in the Firecrawl README to set up and run Firecrawl locally:
+   https://github.com/mendableai/firecrawl/blob/main/README.md
+
+3. Once Firecrawl is set up locally, use the `scrape_website_local.py` script instead of `scrape_website.py`.
+
+Make sure your local Firecrawl instance is running before using the `scrape_website_local.py` script.
